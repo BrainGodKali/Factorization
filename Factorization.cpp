@@ -3,25 +3,21 @@ using namespace std;
 
 int main()
 {
-    int Factor;
+    int Factor = 0;
     int Factorization = 1;
-    int temp = 0;
+
+    cout << "请输入想进行因式分解的值" << endl;
     cin >> Factor;
-    
-    
 
-    while( Factorization <= Factor )
+    while (Factorization <= Factor)
     {
-
-        Factor / Factorization == temp;
-
-        if ( Factor % Factorization == 0 )
+        if (Factor % Factorization == 0)
         {
-       
+
             cout << Factorization << endl;
         }
 
-        Factorization ++ ;
+        Factorization++;
     }
     system("PAUSE");
     return 0;
